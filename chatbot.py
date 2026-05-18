@@ -1,7 +1,7 @@
 from google import genai
 from google.genai import types
 
-client = genai.Client(api_key="AIzaSyAAql_fmScCibtd-e66X01fsls_xsyuD-Y")
+client = genai.Client(api_key="YOUR_API_KEY_HERE")
 
 conversation_history = []
 
@@ -30,3 +30,4 @@ while True:
     
     conversation_history.append(
         types.Content(role="model", parts=[types.Part(text=bot_reply)])
+    )
